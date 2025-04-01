@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>17.0</VCProjectVersion>
+    <ProjectGuid>{94EE4238-D280-4C57-A2A0-A0E11837014F}</ProjectGuid>
+    <RootNamespace>Animator</RootNamespace>
+    <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+    <Import Project="$(VCTargetsPath)\BuildCustomizations\masm.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>17.0.35707.178</_ProjectFileVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <OutDir>$(SolutionDir)Build\$(Platform)\$(Configuration)\</OutDir>
+    <IntDir>$(SolutionDir)Build\$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <OutDir>$(SolutionDir)Build\$(Platform)\$(Configuration)\</OutDir>
+    <IntDir>$(SolutionDir)Build\$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>..\Source;..\Source\Animator;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;_CRT_SECURE_NO_WARNINGS;PROJECT_ANIMATOR;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <AdditionalOptions> /J</AdditionalOptions>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>ddraw.lib;dinput8.lib;dsound.lib;dxguid.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Console</SubSystem>
+      <TargetMachine>MachineX86</TargetMachine>
+      <ImageHasSafeExceptionHandlers>false</ImageHasSafeExceptionHandlers>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>..\Source;..\Source\Animator;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;_CRT_SECURE_NO_WARNINGS;PROJECT_ANIMATOR;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <AdditionalOptions> /J</AdditionalOptions>
+      <RuntimeTypeInfo>false</RuntimeTypeInfo>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>ddraw.lib;dinput8.lib;dsound.lib;dxguid.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Console</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <TargetMachine>MachineX86</TargetMachine>
+      <ImageHasSafeExceptionHandlers>false</ImageHasSafeExceptionHandlers>
+    </Link>
+    <PostBuildEvent>
+      <Command>xcopy /Y /D /I "$(OutDir)$(TargetFileName)" "$(SolutionDir)..\App"</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\Source\Animator\Animator.cpp" />
+    <ClCompile Include="..\Source\Animator\AnimWindow.cpp" />
+    <ClCompile Include="..\Source\Animator\Drawing.cpp" />
+    <ClCompile Include="..\Source\Animator\Main.cpp" />
+    <ClCompile Include="..\Source\Animator\StdAfx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\Source\Animator\StringInputDialog.cpp" />
+    <ClCompile Include="..\Source\Engine\AnimatedSprite.cpp" />
+    <ClCompile Include="..\Source\Engine\AnimationFile.cpp" />
+    <ClCompile Include="..\Source\Engine\Config.cpp" />
+    <ClCompile Include="..\Source\Engine\Config_Map.cpp" />
+    <ClCompile Include="..\Source\Engine\Core\Misc.cpp" />
+    <ClCompile Include="..\Source\Engine\Core\Time.cpp" />
+    <ClCompile Include="..\Source\Engine\MemoryLeakFinder.cpp" />
+    <ClCompile Include="..\Source\Engine\Minidump.cpp" />
+    <ClCompile Include="..\Source\Engine\PhysicsSolver.cpp" />
+    <ClCompile Include="..\Source\Engine\Sprite.cpp" />
+    <ClCompile Include="..\Source\Engine\SXLParser.cpp" />
+    <ClCompile Include="..\Source\Engine\Voxlap.cpp" />
+    <ClCompile Include="..\Source\Voxlap\kplib.cpp" />
+    <ClCompile Include="..\Source\Voxlap\voxlap5.cpp" />
+    <ClCompile Include="..\Source\Voxlap\winmain.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\Source\Animator\Animator.h" />
+    <ClInclude Include="..\Source\Animator\AnimatorTool.h" />
+    <ClInclude Include="..\Source\Animator\AnimWindow.h" />
+    <ClInclude Include="..\Source\Animator\CameraTool.h" />
+    <ClInclude Include="..\Source\Animator\Drawing.h" />
+    <ClInclude Include="..\Source\Animator\MoveTool.h" />
+    <ClInclude Include="..\Source\Animator\Resources.h" />
+    <ClInclude Include="..\Source\Animator\RotateTool.h" />
+    <ClInclude Include="..\Source\Animator\ScaleTool.h" />
+    <ClInclude Include="..\Source\Animator\SelectionTool.h" />
+    <ClInclude Include="..\Source\Animator\StdAfx.h" />
+    <ClInclude Include="..\Source\Animator\StringInputDialog.h" />
+    <ClInclude Include="..\Source\Engine\AnimatedSprite.h" />
+    <ClInclude Include="..\Source\Engine\AnimationFile.h" />
+    <ClInclude Include="..\Source\Engine\Config.h" />
+    <ClInclude Include="..\Source\Engine\Config_Vars.h" />
+    <ClInclude Include="..\Source\Engine\Core\Collision.h" />
+    <ClInclude Include="..\Source\Engine\Core\Interpolation.h" />
+    <ClInclude Include="..\Source\Engine\Core\Matrix44.h" />
+    <ClInclude Include="..\Source\Engine\Core\Misc.h" />
+    <ClInclude Include="..\Source\Engine\Core\Quaternion.h" />
+    <ClInclude Include="..\Source\Engine\Core\SmartPointer.h" />
+    <ClInclude Include="..\Source\Engine\Core\StringUtils.h" />
+    <ClInclude Include="..\Source\Engine\Core\Time.h" />
+    <ClInclude Include="..\Source\Engine\Core\Vector2D.h" />
+    <ClInclude Include="..\Source\Engine\Core\Vector3D.h" />
+    <ClInclude Include="..\Source\Engine\Core\VoxelRayTraverse.h" />
+    <ClInclude Include="..\Source\Engine\MemoryLeakFinder.h" />
+    <ClInclude Include="..\Source\Engine\Minidump.h" />
+    <ClInclude Include="..\Source\Engine\PhysicsSolver.h" />
+    <ClInclude Include="..\Source\Engine\Sprite.h" />
+    <ClInclude Include="..\Source\Engine\SXLParser.h" />
+    <ClInclude Include="..\Source\Engine\Voxlap.h" />
+    <ClInclude Include="..\Source\Engine\VoxlapConversions.h" />
+    <ClInclude Include="..\Source\Voxlap\msvc.h" />
+    <ClInclude Include="..\Source\Voxlap\sysmain.h" />
+    <ClInclude Include="..\Source\Voxlap\voxlap5.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <MASM Include="..\Source\Voxlap\v5.asm">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </ExcludedFromBuild>
+    </MASM>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="..\Source\Animator\Animator.rc" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+    <Import Project="$(VCTargetsPath)\BuildCustomizations\masm.targets" />
+  </ImportGroup>
+</Project>

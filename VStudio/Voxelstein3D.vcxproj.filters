@@ -1,0 +1,399 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Source Files\Voxlap">
+      <UniqueIdentifier>{4bd399a4-5838-4ef4-a15f-89162d9ade84}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Engine">
+      <UniqueIdentifier>{ae172107-0ddf-4b77-b8af-02873dd7ea80}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Engine\Core">
+      <UniqueIdentifier>{c809f89a-5ac5-4e52-9feb-1be855833743}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Engine\Sound">
+      <UniqueIdentifier>{23e05949-9c36-4af9-962f-f238c6b4bb9b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Game">
+      <UniqueIdentifier>{876043c0-e351-42ad-aa2e-d2f2d7374506}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Game\Entities">
+      <UniqueIdentifier>{7321a5dc-d099-4e29-8a61-b12ad6a1fa2f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Game\ParticleSystems">
+      <UniqueIdentifier>{6984fa09-eb8e-4996-8df8-55282c592279}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Game\Weapons">
+      <UniqueIdentifier>{ca208697-9925-4ac2-8bd6-a1c2a7b399f8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\Source\Voxlap\adlibemu.cpp">
+      <Filter>Source Files\Voxlap</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\Voxlap\kplib.cpp">
+      <Filter>Source Files\Voxlap</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\Voxlap\voxlap5.cpp">
+      <Filter>Source Files\Voxlap</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\Voxlap\winmain.cpp">
+      <Filter>Source Files\Voxlap</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\Engine\AnimatedSprite.cpp">
+      <Filter>Source Files\Engine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\Engine\AnimationFile.cpp">
+      <Filter>Source Files\Engine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\Engine\Config.cpp">
+      <Filter>Source Files\Engine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\Engine\Config_Map.cpp">
+      <Filter>Source Files\Engine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\Engine\MemoryLeakFinder.cpp">
+      <Filter>Source Files\Engine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\Engine\Minidump.cpp">
+      <Filter>Source Files\Engine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\Engine\PhysicsSolver.cpp">
+      <Filter>Source Files\Engine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\Engine\Sprite.cpp">
+      <Filter>Source Files\Engine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\Engine\SXLParser.cpp">
+      <Filter>Source Files\Engine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\Engine\SystemInfo.cpp">
+      <Filter>Source Files\Engine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\Engine\Voxlap.cpp">
+      <Filter>Source Files\Engine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\Engine\Core\Misc.cpp">
+      <Filter>Source Files\Engine\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\Engine\Core\Time.cpp">
+      <Filter>Source Files\Engine\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\Engine\Sound\Sound.cpp">
+      <Filter>Source Files\Engine\Sound</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\Engine\Sound\SoundData.cpp">
+      <Filter>Source Files\Engine\Sound</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\Engine\Sound\SoundDevice.cpp">
+      <Filter>Source Files\Engine\Sound</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\Engine\Sound\SoundManager.cpp">
+      <Filter>Source Files\Engine\Sound</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\Game\Game.cpp">
+      <Filter>Source Files\Game</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\Game\GameMenu.cpp">
+      <Filter>Source Files\Game</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\Game\Main.cpp">
+      <Filter>Source Files\Game</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\Game\StdAfx.cpp">
+      <Filter>Source Files\Game</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\Game\Entities\CharacterEntity.cpp">
+      <Filter>Source Files\Game\Entities</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\Game\Entities\DoorEntity.cpp">
+      <Filter>Source Files\Game\Entities</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\Game\Entities\DummySpriteEntity.cpp">
+      <Filter>Source Files\Game\Entities</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\Game\Entities\Entity.cpp">
+      <Filter>Source Files\Game\Entities</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\Game\Entities\EntityTree.cpp">
+      <Filter>Source Files\Game\Entities</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\Game\Entities\GuardEntity.cpp">
+      <Filter>Source Files\Game\Entities</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\Game\Entities\ItemEntity.cpp">
+      <Filter>Source Files\Game\Entities</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\Game\Entities\OfficerEntity.cpp">
+      <Filter>Source Files\Game\Entities</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\Game\Entities\PlayerEntity.cpp">
+      <Filter>Source Files\Game\Entities</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\Game\Entities\SoldierEntity.cpp">
+      <Filter>Source Files\Game\Entities</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\Game\Entities\StickyBombEntity.cpp">
+      <Filter>Source Files\Game\Entities</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\Game\Entities\TreasureItemEntity.cpp">
+      <Filter>Source Files\Game\Entities</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\Game\Entities\UsableEntity.cpp">
+      <Filter>Source Files\Game\Entities</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\Game\Entities\WeaponItemEntity.cpp">
+      <Filter>Source Files\Game\Entities</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\Game\ParticleSystems\BloodHit.cpp">
+      <Filter>Source Files\Game\ParticleSystems</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\Game\ParticleSystems\BulletHit.cpp">
+      <Filter>Source Files\Game\ParticleSystems</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\Game\ParticleSystems\Explosion.cpp">
+      <Filter>Source Files\Game\ParticleSystems</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\Game\ParticleSystems\ExplosionCloud.cpp">
+      <Filter>Source Files\Game\ParticleSystems</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\Game\ParticleSystems\ExplosionSmoke.cpp">
+      <Filter>Source Files\Game\ParticleSystems</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\Game\ParticleSystems\Muzzle.cpp">
+      <Filter>Source Files\Game\ParticleSystems</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\Game\ParticleSystems\ParticleSystem.cpp">
+      <Filter>Source Files\Game\ParticleSystems</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\Game\ParticleSystems\ParticleSystemManager.cpp">
+      <Filter>Source Files\Game\ParticleSystems</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\Game\Weapons\Chaingun.cpp">
+      <Filter>Source Files\Game\Weapons</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\Game\Weapons\Grenade.cpp">
+      <Filter>Source Files\Game\Weapons</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\Game\Weapons\Knife.cpp">
+      <Filter>Source Files\Game\Weapons</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\Game\Weapons\Pistol.cpp">
+      <Filter>Source Files\Game\Weapons</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\Game\Weapons\StickyBomb.cpp">
+      <Filter>Source Files\Game\Weapons</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\Game\Weapons\Weapon.cpp">
+      <Filter>Source Files\Game\Weapons</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\Source\Voxlap\msvc.h">
+      <Filter>Source Files\Voxlap</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\Voxlap\sysmain.h">
+      <Filter>Source Files\Voxlap</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\Voxlap\voxlap5.h">
+      <Filter>Source Files\Voxlap</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\Engine\AnimatedSprite.h">
+      <Filter>Source Files\Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\Engine\AnimationFile.h">
+      <Filter>Source Files\Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\Engine\Config.h">
+      <Filter>Source Files\Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\Engine\Config_Vars.h">
+      <Filter>Source Files\Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\Engine\MemoryLeakFinder.h">
+      <Filter>Source Files\Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\Engine\Minidump.h">
+      <Filter>Source Files\Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\Engine\PhysicsSolver.h">
+      <Filter>Source Files\Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\Engine\Sprite.h">
+      <Filter>Source Files\Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\Engine\SXLParser.h">
+      <Filter>Source Files\Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\Engine\SystemInfo.h">
+      <Filter>Source Files\Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\Engine\Voxlap.h">
+      <Filter>Source Files\Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\Engine\VoxlapConversions.h">
+      <Filter>Source Files\Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\Engine\Core\Collision.h">
+      <Filter>Source Files\Engine\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\Engine\Core\Interpolation.h">
+      <Filter>Source Files\Engine\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\Engine\Core\Matrix44.h">
+      <Filter>Source Files\Engine\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\Engine\Core\Misc.h">
+      <Filter>Source Files\Engine\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\Engine\Core\Quaternion.h">
+      <Filter>Source Files\Engine\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\Engine\Core\SmartPointer.h">
+      <Filter>Source Files\Engine\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\Engine\Core\StringUtils.h">
+      <Filter>Source Files\Engine\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\Engine\Core\Time.h">
+      <Filter>Source Files\Engine\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\Engine\Core\Vector2D.h">
+      <Filter>Source Files\Engine\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\Engine\Core\Vector3D.h">
+      <Filter>Source Files\Engine\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\Engine\Core\VoxelRayTraverse.h">
+      <Filter>Source Files\Engine\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\Engine\Sound\Sound.h">
+      <Filter>Source Files\Engine\Sound</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\Engine\Sound\SoundData.h">
+      <Filter>Source Files\Engine\Sound</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\Engine\Sound\SoundDevice.h">
+      <Filter>Source Files\Engine\Sound</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\Engine\Sound\SoundManager.h">
+      <Filter>Source Files\Engine\Sound</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\Game\Game.h">
+      <Filter>Source Files\Game</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\Game\GameMenu.h">
+      <Filter>Source Files\Game</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\Game\HUD.h">
+      <Filter>Source Files\Game</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\Game\StdAfx.h">
+      <Filter>Source Files\Game</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\Game\Entities\CharacterEntity.h">
+      <Filter>Source Files\Game\Entities</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\Game\Entities\DoorEntity.h">
+      <Filter>Source Files\Game\Entities</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\Game\Entities\DummySpriteEntity.h">
+      <Filter>Source Files\Game\Entities</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\Game\Entities\Entity.h">
+      <Filter>Source Files\Game\Entities</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\Game\Entities\EntityTree.h">
+      <Filter>Source Files\Game\Entities</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\Game\Entities\GuardEntity.h">
+      <Filter>Source Files\Game\Entities</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\Game\Entities\ItemEntity.h">
+      <Filter>Source Files\Game\Entities</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\Game\Entities\OfficerEntity.h">
+      <Filter>Source Files\Game\Entities</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\Game\Entities\PlayerEntity.h">
+      <Filter>Source Files\Game\Entities</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\Game\Entities\SoldierEntity.h">
+      <Filter>Source Files\Game\Entities</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\Game\Entities\StickyBombEntity.h">
+      <Filter>Source Files\Game\Entities</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\Game\Entities\TreasureItemEntity.h">
+      <Filter>Source Files\Game\Entities</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\Game\Entities\UsableEntity.h">
+      <Filter>Source Files\Game\Entities</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\Game\Entities\WeaponItemEntity.h">
+      <Filter>Source Files\Game\Entities</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\Game\ParticleSystems\BloodHit.h">
+      <Filter>Source Files\Game\ParticleSystems</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\Game\ParticleSystems\BulletHit.h">
+      <Filter>Source Files\Game\ParticleSystems</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\Game\ParticleSystems\Explosion.h">
+      <Filter>Source Files\Game\ParticleSystems</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\Game\ParticleSystems\ExplosionCloud.h">
+      <Filter>Source Files\Game\ParticleSystems</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\Game\ParticleSystems\ExplosionSmoke.h">
+      <Filter>Source Files\Game\ParticleSystems</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\Game\ParticleSystems\Muzzle.h">
+      <Filter>Source Files\Game\ParticleSystems</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\Game\ParticleSystems\ParticleSystem.h">
+      <Filter>Source Files\Game\ParticleSystems</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\Game\ParticleSystems\ParticleSystemManager.h">
+      <Filter>Source Files\Game\ParticleSystems</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\Game\Weapons\Chaingun.h">
+      <Filter>Source Files\Game\Weapons</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\Game\Weapons\Grenade.h">
+      <Filter>Source Files\Game\Weapons</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\Game\Weapons\Knife.h">
+      <Filter>Source Files\Game\Weapons</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\Game\Weapons\Pistol.h">
+      <Filter>Source Files\Game\Weapons</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\Game\Weapons\StickyBomb.h">
+      <Filter>Source Files\Game\Weapons</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\Game\Weapons\Weapon.h">
+      <Filter>Source Files\Game\Weapons</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\Game\Resources.h">
+      <Filter>Resource Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <MASM Include="..\Source\Voxlap\v5.asm">
+      <Filter>Source Files\Voxlap</Filter>
+    </MASM>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="..\Source\Game\Game.rc">
+      <Filter>Resource Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>17.0</VCProjectVersion>
+    <ProjectName>Voxelstein3D</ProjectName>
+    <ProjectGuid>{FFD54AF7-D169-4743-BE00-8D9153C28EC8}</ProjectGuid>
+    <RootNamespace>Vxlst3D</RootNamespace>
+    <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+    <Import Project="$(VCTargetsPath)\BuildCustomizations\masm.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>17.0.35707.178</_ProjectFileVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>$(SolutionDir)Build\$(Platform)\$(Configuration)\</OutDir>
+    <IntDir>$(SolutionDir)Build\$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>$(SolutionDir)Build\$(Platform)\$(Configuration)\</OutDir>
+    <IntDir>$(SolutionDir)Build\$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>..\Source;..\Source\Game;Vendor;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <AdditionalOptions> /J</AdditionalOptions>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>ddraw.lib;dinput8.lib;dsound.lib;dxguid.lib;ogg_static_d.lib;vorbis_static_d.lib;vorbisfile_static_d.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>Vendor\Lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Console</SubSystem>
+      <TargetMachine>MachineX86</TargetMachine>
+      <ImageHasSafeExceptionHandlers>false</ImageHasSafeExceptionHandlers>
+    </Link>
+    <PostBuildEvent>
+      <Command>
+      </Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>..\Source;..\Source\Game;Vendor;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <AdditionalOptions> /J</AdditionalOptions>
+      <RuntimeTypeInfo>false</RuntimeTypeInfo>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>ddraw.lib;dinput8.lib;dsound.lib;dxguid.lib;ogg_static.lib;vorbis_static.lib;vorbisfile_static.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>Vendor\Lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Console</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <TargetMachine>MachineX86</TargetMachine>
+      <ImageHasSafeExceptionHandlers>false</ImageHasSafeExceptionHandlers>
+    </Link>
+    <PostBuildEvent>
+      <Command>xcopy /Y /D /I "$(OutDir)$(TargetFileName)" "$(SolutionDir)..\App"</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\Source\Engine\AnimatedSprite.cpp" />
+    <ClCompile Include="..\Source\Engine\AnimationFile.cpp" />
+    <ClCompile Include="..\Source\Engine\Config.cpp" />
+    <ClCompile Include="..\Source\Engine\Config_Map.cpp" />
+    <ClCompile Include="..\Source\Engine\Core\Misc.cpp" />
+    <ClCompile Include="..\Source\Engine\Core\Time.cpp" />
+    <ClCompile Include="..\Source\Engine\MemoryLeakFinder.cpp" />
+    <ClCompile Include="..\Source\Engine\Minidump.cpp" />
+    <ClCompile Include="..\Source\Engine\PhysicsSolver.cpp" />
+    <ClCompile Include="..\Source\Engine\Sound\Sound.cpp" />
+    <ClCompile Include="..\Source\Engine\Sound\SoundData.cpp" />
+    <ClCompile Include="..\Source\Engine\Sound\SoundDevice.cpp" />
+    <ClCompile Include="..\Source\Engine\Sound\SoundManager.cpp" />
+    <ClCompile Include="..\Source\Engine\Sprite.cpp" />
+    <ClCompile Include="..\Source\Engine\SXLParser.cpp" />
+    <ClCompile Include="..\Source\Engine\SystemInfo.cpp" />
+    <ClCompile Include="..\Source\Engine\Voxlap.cpp" />
+    <ClCompile Include="..\Source\Game\Entities\CharacterEntity.cpp" />
+    <ClCompile Include="..\Source\Game\Entities\DoorEntity.cpp" />
+    <ClCompile Include="..\Source\Game\Entities\DummySpriteEntity.cpp" />
+    <ClCompile Include="..\Source\Game\Entities\Entity.cpp" />
+    <ClCompile Include="..\Source\Game\Entities\EntityTree.cpp" />
+    <ClCompile Include="..\Source\Game\Entities\GuardEntity.cpp" />
+    <ClCompile Include="..\Source\Game\Entities\ItemEntity.cpp" />
+    <ClCompile Include="..\Source\Game\Entities\OfficerEntity.cpp" />
+    <ClCompile Include="..\Source\Game\Entities\PlayerEntity.cpp" />
+    <ClCompile Include="..\Source\Game\Entities\SoldierEntity.cpp" />
+    <ClCompile Include="..\Source\Game\Entities\StickyBombEntity.cpp" />
+    <ClCompile Include="..\Source\Game\Entities\TreasureItemEntity.cpp" />
+    <ClCompile Include="..\Source\Game\Entities\UsableEntity.cpp" />
+    <ClCompile Include="..\Source\Game\Entities\WeaponItemEntity.cpp" />
+    <ClCompile Include="..\Source\Game\Game.cpp" />
+    <ClCompile Include="..\Source\Game\GameMenu.cpp" />
+    <ClCompile Include="..\Source\Game\Main.cpp" />
+    <ClCompile Include="..\Source\Game\ParticleSystems\BloodHit.cpp" />
+    <ClCompile Include="..\Source\Game\ParticleSystems\BulletHit.cpp" />
+    <ClCompile Include="..\Source\Game\ParticleSystems\Explosion.cpp" />
+    <ClCompile Include="..\Source\Game\ParticleSystems\ExplosionCloud.cpp" />
+    <ClCompile Include="..\Source\Game\ParticleSystems\ExplosionSmoke.cpp" />
+    <ClCompile Include="..\Source\Game\ParticleSystems\Muzzle.cpp" />
+    <ClCompile Include="..\Source\Game\ParticleSystems\ParticleSystem.cpp" />
+    <ClCompile Include="..\Source\Game\ParticleSystems\ParticleSystemManager.cpp" />
+    <ClCompile Include="..\Source\Game\StdAfx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\Source\Game\Weapons\Chaingun.cpp" />
+    <ClCompile Include="..\Source\Game\Weapons\Grenade.cpp" />
+    <ClCompile Include="..\Source\Game\Weapons\Knife.cpp" />
+    <ClCompile Include="..\Source\Game\Weapons\Pistol.cpp" />
+    <ClCompile Include="..\Source\Game\Weapons\StickyBomb.cpp" />
+    <ClCompile Include="..\Source\Game\Weapons\Weapon.cpp" />
+    <ClCompile Include="..\Source\Voxlap\adlibemu.cpp" />
+    <ClCompile Include="..\Source\Voxlap\kplib.cpp" />
+    <ClCompile Include="..\Source\Voxlap\voxlap5.cpp" />
+    <ClCompile Include="..\Source\Voxlap\winmain.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\Source\Engine\AnimatedSprite.h" />
+    <ClInclude Include="..\Source\Engine\AnimationFile.h" />
+    <ClInclude Include="..\Source\Engine\Config.h" />
+    <ClInclude Include="..\Source\Engine\Config_Vars.h" />
+    <ClInclude Include="..\Source\Engine\Core\Collision.h" />
+    <ClInclude Include="..\Source\Engine\Core\Interpolation.h" />
+    <ClInclude Include="..\Source\Engine\Core\Matrix44.h" />
+    <ClInclude Include="..\Source\Engine\Core\Misc.h" />
+    <ClInclude Include="..\Source\Engine\Core\Quaternion.h" />
+    <ClInclude Include="..\Source\Engine\Core\SmartPointer.h" />
+    <ClInclude Include="..\Source\Engine\Core\StringUtils.h" />
+    <ClInclude Include="..\Source\Engine\Core\Time.h" />
+    <ClInclude Include="..\Source\Engine\Core\Vector2D.h" />
+    <ClInclude Include="..\Source\Engine\Core\Vector3D.h" />
+    <ClInclude Include="..\Source\Engine\Core\VoxelRayTraverse.h" />
+    <ClInclude Include="..\Source\Engine\MemoryLeakFinder.h" />
+    <ClInclude Include="..\Source\Engine\Minidump.h" />
+    <ClInclude Include="..\Source\Engine\PhysicsSolver.h" />
+    <ClInclude Include="..\Source\Engine\Sound\Sound.h" />
+    <ClInclude Include="..\Source\Engine\Sound\SoundData.h" />
+    <ClInclude Include="..\Source\Engine\Sound\SoundDevice.h" />
+    <ClInclude Include="..\Source\Engine\Sound\SoundManager.h" />
+    <ClInclude Include="..\Source\Engine\Sprite.h" />
+    <ClInclude Include="..\Source\Engine\SXLParser.h" />
+    <ClInclude Include="..\Source\Engine\SystemInfo.h" />
+    <ClInclude Include="..\Source\Engine\Voxlap.h" />
+    <ClInclude Include="..\Source\Engine\VoxlapConversions.h" />
+    <ClInclude Include="..\Source\Game\Entities\CharacterEntity.h" />
+    <ClInclude Include="..\Source\Game\Entities\DoorEntity.h" />
+    <ClInclude Include="..\Source\Game\Entities\DummySpriteEntity.h" />
+    <ClInclude Include="..\Source\Game\Entities\Entity.h" />
+    <ClInclude Include="..\Source\Game\Entities\EntityTree.h" />
+    <ClInclude Include="..\Source\Game\Entities\GuardEntity.h" />
+    <ClInclude Include="..\Source\Game\Entities\ItemEntity.h" />
+    <ClInclude Include="..\Source\Game\Entities\OfficerEntity.h" />
+    <ClInclude Include="..\Source\Game\Entities\PlayerEntity.h" />
+    <ClInclude Include="..\Source\Game\Entities\SoldierEntity.h" />
+    <ClInclude Include="..\Source\Game\Entities\StickyBombEntity.h" />
+    <ClInclude Include="..\Source\Game\Entities\TreasureItemEntity.h" />
+    <ClInclude Include="..\Source\Game\Entities\UsableEntity.h" />
+    <ClInclude Include="..\Source\Game\Entities\WeaponItemEntity.h" />
+    <ClInclude Include="..\Source\Game\Game.h" />
+    <ClInclude Include="..\Source\Game\GameMenu.h" />
+    <ClInclude Include="..\Source\Game\HUD.h" />
+    <ClInclude Include="..\Source\Game\ParticleSystems\BloodHit.h" />
+    <ClInclude Include="..\Source\Game\ParticleSystems\BulletHit.h" />
+    <ClInclude Include="..\Source\Game\ParticleSystems\Explosion.h" />
+    <ClInclude Include="..\Source\Game\ParticleSystems\ExplosionCloud.h" />
+    <ClInclude Include="..\Source\Game\ParticleSystems\ExplosionSmoke.h" />
+    <ClInclude Include="..\Source\Game\ParticleSystems\Muzzle.h" />
+    <ClInclude Include="..\Source\Game\ParticleSystems\ParticleSystem.h" />
+    <ClInclude Include="..\Source\Game\ParticleSystems\ParticleSystemManager.h" />
+    <ClInclude Include="..\Source\Game\Resources.h" />
+    <ClInclude Include="..\Source\Game\StdAfx.h" />
+    <ClInclude Include="..\Source\Game\Weapons\Chaingun.h" />
+    <ClInclude Include="..\Source\Game\Weapons\Grenade.h" />
+    <ClInclude Include="..\Source\Game\Weapons\Knife.h" />
+    <ClInclude Include="..\Source\Game\Weapons\Pistol.h" />
+    <ClInclude Include="..\Source\Game\Weapons\StickyBomb.h" />
+    <ClInclude Include="..\Source\Game\Weapons\Weapon.h" />
+    <ClInclude Include="..\Source\Voxlap\msvc.h" />
+    <ClInclude Include="..\Source\Voxlap\sysmain.h" />
+    <ClInclude Include="..\Source\Voxlap\voxlap5.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <MASM Include="..\Source\Voxlap\v5.asm">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </ExcludedFromBuild>
+    </MASM>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="..\Source\Game\Game.rc" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+    <Import Project="$(VCTargetsPath)\BuildCustomizations\masm.targets" />
+  </ImportGroup>
+</Project>

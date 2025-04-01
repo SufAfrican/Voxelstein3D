@@ -1,0 +1,4 @@
+#include "WinResrc.h"
+#include "Resources.h"
+
+ID_ICON ICON "VXLST3D.ico"

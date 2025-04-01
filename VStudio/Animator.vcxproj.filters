@@ -1,0 +1,216 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Source Files\Engine">
+      <UniqueIdentifier>{c2d33acb-c434-4cda-9fd7-19b3607e54ab}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Engine\Core">
+      <UniqueIdentifier>{fc025727-2a35-4477-8ef8-b1444c547cf2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Voxlap">
+      <UniqueIdentifier>{a4f9af02-fef6-4cb6-914e-05b47499e78a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Animator">
+      <UniqueIdentifier>{232e57c6-b75e-4b3c-8526-b4b51151eacc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Animator\Tools">
+      <UniqueIdentifier>{eeb62a03-cc8f-46d1-bde9-18a824a831e9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\Source\Engine\AnimatedSprite.cpp">
+      <Filter>Source Files\Engine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\Engine\AnimationFile.cpp">
+      <Filter>Source Files\Engine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\Engine\Config.cpp">
+      <Filter>Source Files\Engine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\Engine\Config_Map.cpp">
+      <Filter>Source Files\Engine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\Engine\MemoryLeakFinder.cpp">
+      <Filter>Source Files\Engine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\Engine\Minidump.cpp">
+      <Filter>Source Files\Engine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\Engine\PhysicsSolver.cpp">
+      <Filter>Source Files\Engine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\Engine\Sprite.cpp">
+      <Filter>Source Files\Engine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\Engine\SXLParser.cpp">
+      <Filter>Source Files\Engine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\Engine\Voxlap.cpp">
+      <Filter>Source Files\Engine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\Engine\Core\Misc.cpp">
+      <Filter>Source Files\Engine\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\Engine\Core\Time.cpp">
+      <Filter>Source Files\Engine\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\Voxlap\kplib.cpp">
+      <Filter>Source Files\Voxlap</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\Voxlap\voxlap5.cpp">
+      <Filter>Source Files\Voxlap</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\Voxlap\winmain.cpp">
+      <Filter>Source Files\Voxlap</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\Animator\Animator.cpp">
+      <Filter>Source Files\Animator</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\Animator\AnimWindow.cpp">
+      <Filter>Source Files\Animator</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\Animator\Drawing.cpp">
+      <Filter>Source Files\Animator</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\Animator\Main.cpp">
+      <Filter>Source Files\Animator</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\Animator\StdAfx.cpp">
+      <Filter>Source Files\Animator</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\Animator\StringInputDialog.cpp">
+      <Filter>Source Files\Animator</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\Source\Engine\AnimatedSprite.h">
+      <Filter>Source Files\Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\Engine\AnimationFile.h">
+      <Filter>Source Files\Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\Engine\Config.h">
+      <Filter>Source Files\Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\Engine\Config_Vars.h">
+      <Filter>Source Files\Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\Engine\MemoryLeakFinder.h">
+      <Filter>Source Files\Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\Engine\Minidump.h">
+      <Filter>Source Files\Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\Engine\PhysicsSolver.h">
+      <Filter>Source Files\Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\Engine\Sprite.h">
+      <Filter>Source Files\Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\Engine\SXLParser.h">
+      <Filter>Source Files\Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\Engine\Voxlap.h">
+      <Filter>Source Files\Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\Engine\VoxlapConversions.h">
+      <Filter>Source Files\Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\Engine\Core\Collision.h">
+      <Filter>Source Files\Engine\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\Engine\Core\Interpolation.h">
+      <Filter>Source Files\Engine\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\Engine\Core\Matrix44.h">
+      <Filter>Source Files\Engine\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\Engine\Core\Misc.h">
+      <Filter>Source Files\Engine\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\Engine\Core\Quaternion.h">
+      <Filter>Source Files\Engine\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\Engine\Core\SmartPointer.h">
+      <Filter>Source Files\Engine\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\Engine\Core\StringUtils.h">
+      <Filter>Source Files\Engine\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\Engine\Core\Time.h">
+      <Filter>Source Files\Engine\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\Engine\Core\Vector2D.h">
+      <Filter>Source Files\Engine\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\Engine\Core\Vector3D.h">
+      <Filter>Source Files\Engine\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\Engine\Core\VoxelRayTraverse.h">
+      <Filter>Source Files\Engine\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\Voxlap\msvc.h">
+      <Filter>Source Files\Voxlap</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\Voxlap\sysmain.h">
+      <Filter>Source Files\Voxlap</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\Voxlap\voxlap5.h">
+      <Filter>Source Files\Voxlap</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\Animator\Animator.h">
+      <Filter>Source Files\Animator</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\Animator\AnimWindow.h">
+      <Filter>Source Files\Animator</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\Animator\Drawing.h">
+      <Filter>Source Files\Animator</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\Animator\StdAfx.h">
+      <Filter>Source Files\Animator</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\Animator\StringInputDialog.h">
+      <Filter>Source Files\Animator</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\Animator\AnimatorTool.h">
+      <Filter>Source Files\Animator\Tools</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\Animator\CameraTool.h">
+      <Filter>Source Files\Animator\Tools</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\Animator\MoveTool.h">
+      <Filter>Source Files\Animator\Tools</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\Animator\RotateTool.h">
+      <Filter>Source Files\Animator\Tools</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\Animator\ScaleTool.h">
+      <Filter>Source Files\Animator\Tools</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\Animator\SelectionTool.h">
+      <Filter>Source Files\Animator\Tools</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\Animator\Resources.h">
+      <Filter>Resource Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <MASM Include="..\Source\Voxlap\v5.asm">
+      <Filter>Source Files\Voxlap</Filter>
+    </MASM>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="..\Source\Animator\Animator.rc">
+      <Filter>Resource Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+</Project>
