@@ -1,0 +1,3 @@
+# Ignore Visual Studio build and .vs directories
+VStudio/Build/
+VStudio/.vs/
